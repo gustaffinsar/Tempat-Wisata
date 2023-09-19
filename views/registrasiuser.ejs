@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+            background: skyblue;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: 300;
+        }
+
+        .tulisan_login {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .kotak_login {
+            width: 350px;
+            background: white;
+            margin: 80px auto;
+            padding: 30px 20px;
+        }
+
+        label {
+            font-size: 11pt;
+        }
+
+        .form_login {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 10px;
+            font-size: 11pt;
+            margin-bottom: 20px;
+        }
+
+        .tombol_login {
+            background: slateblue;
+            color: white;
+            font-size: 11pt;
+            width: 100%;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+        }
+
+        .link {
+            color: #232323;
+            text-decoration: none;
+            font-size: 10pt;
+        }
+
+        .text--center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/registrasiuser" method="post">
+        <div class="kotak_login">
+            <p class="tulisan_login">REGISTRASI</p>
+
+            <form>
+                <label>Username</label>
+                <input type="text" name="nama" class="form_login" placeholder="Masukkan Username" required>
+
+                <label>Email</label>
+                <input type="text" name="email" class="form_login" placeholder="Masukkan Email" required>
+
+                <label>Password</label>
+                <input type="password" name="password" class="form_login" placeholder="Masukkan Password" required>
+
+                <input type="submit" class="tombol_login" value="REGISTRASI">
+
+                <!-- <a href="/home"></a> -->
+            </form>
+</body>
+
+</html>
